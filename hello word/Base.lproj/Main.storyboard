@@ -27,12 +27,16 @@
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="NUy-1K-41e"/>
+                                    <constraint firstAttribute="width" constant="250" id="Sqc-dU-uOU"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Show text">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="40"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="makeActionWithButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="l9L-G4-tyh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -45,6 +49,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Kkt-hc-Yj5" secondAttribute="bottom" constant="134" id="oWM-mG-aLf"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="helloJediLabel" destination="5Ca-fE-BHG" id="5kH-oJ-Xhg"/>
+                        <outlet property="toggleButton" destination="Kkt-hc-Yj5" id="F6n-TV-eaJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
